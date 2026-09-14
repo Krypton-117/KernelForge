@@ -11,3 +11,6 @@ Read WORKSTATE, risks and backlog. Preserve ignored data/. Verify with documente
 
 ## Publication repair
 Published sanitized main successfully. Remote commit 74cb64f matched local HEAD; GitHub API confirmed README and all 48 files. Nine tests passed. Keep master local; only push main. No paper originals or databases were uploaded. Next product step remains Learner-Kernel requirements.
+
+## Contributor publication
+README credits documentation to Krypton-117 and implementation/testing to OpenAI Codex. Push e656a8f verified by remote commit and README blob equality after transient connectivity recovered without config changes. Product next step remains the requirements brief.
