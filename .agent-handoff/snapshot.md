@@ -10,4 +10,4 @@
 Read WORKSTATE, risks and backlog. Preserve ignored data/. Verify with documented smoke commands before continuing from the prepared research brief.
 
 ## Publication repair
-Remote repository was empty. Nine tests passed again. Publish a sanitized root snapshot on main, excluding earlier local history and ignored paper corpus; verify remote content.
+Published sanitized main successfully. Remote commit 74cb64f matched local HEAD; GitHub API confirmed README and all 48 files. Nine tests passed. Keep master local; only push main. No paper originals or databases were uploaded. Next product step remains Learner-Kernel requirements.
