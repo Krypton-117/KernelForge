@@ -20,6 +20,7 @@ No Kernel-Forge implementation is in progress. First research-cycle evidence and
 # Pending Work
 Kernel-Forge v0.1: none. Next product step: define LEARNER_KERNEL_SPEC.md from the product owner's requirements before implementing Learner-Kernel.
 # Current Decisions
+- Repository-local Git author is Krypton-117, using the verified account ID-based GitHub noreply email. Earlier public commits retain their original generic author; do not rewrite public history solely for attribution.
 - Use user's Conda base, UTF-8, and process-local CLI paths; no new environment.
 - WORKSTATE owns operational state; handoff index/snapshot route to it and evidence files hold detail.
 - SQLite/FTS5 service is standard-library-only. PaperQA/Context7 remain upstream integrations.
