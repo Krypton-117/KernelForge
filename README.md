@@ -37,6 +37,11 @@ PaperPipe、PaperQA 和 Context7 的配置与上游文档见 [`docs/TOOLING.md`]
 
 测试使用的论文只存在于本地验证数据目录，不随仓库发布；重新验证时按工具文档自行获取对应来源。
 
+## Contributors
+
+- **Krypton-117**：构想、需求与方向。
+- **OpenAI Codex（AI 编程助手）**：代码实现、测试与文档整理。
+
 ## 许可证
 
 Kernel-Forge 自己编写的代码采用 MIT License，见 [`LICENSE`](LICENSE)。依赖的 skill、MCP、库、论文和文档仍受各自上游许可证、版权和服务条款约束。

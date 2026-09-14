@@ -5,6 +5,7 @@ Kernel-Forge v0.1 is complete and verified. Resume by defining Learner-Kernel re
 # Active Work
 No Kernel-Forge implementation is in progress. First research-cycle evidence and conditional experiment selection are in docs/LEARNER_KERNEL_FIRST_CYCLE.md.
 # Verified Completed Work
+- README Contributors credits Krypton-117 for concept/direction and OpenAI Codex as AI coding assistant for implementation, testing and documentation. Documentation-only change; checked diff and remote publication after push.
 - Installed personal agent-handoff from WeirdSky924/agent-handoff-skill; initialized and maintained repository continuity.
 - Conda base Python 3.12.9: <conda-base-python>.
 - Six-tool Method Bank: validated atomic writes, SQLite/FTS5 filters, many-to-many provenance, review history and reviewed universal seed.
@@ -34,4 +35,4 @@ Implementation checkpoint ea789b0 is committed locally; final handoff is tracked
 # Resume From Here
 Read docs/LEARNER_KERNEL_FIRST_CYCLE.md, then create LEARNER_KERNEL_SPEC.md from the product owner's learning task, interfaces, update/persistence semantics, execution constraints and measurable acceptance thresholds. Retrieve relevant methods against those concrete situations before planning implementation. To verify this Forge checkpoint first, run the Conda base command `python -X utf8 -m unittest discover -s method-bank/tests -v`; integration replay commands are in docs/acceptance/README.md.
 # Last Updated
-2026-09-13 (Asia/Shanghai; live evidence timestamps use UTC)
+2026-09-14 (Asia/Shanghai; live evidence timestamps use UTC)
