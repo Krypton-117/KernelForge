@@ -5,7 +5,7 @@ Kernel-Forge v0.1 is complete and verified. Resume by defining Learner-Kernel re
 # Active Work
 No Kernel-Forge implementation is in progress. First research-cycle evidence and conditional experiment selection are in docs/LEARNER_KERNEL_FIRST_CYCLE.md.
 # Verified Completed Work
-- README Contributors credits Krypton-117 for concept/direction and OpenAI Codex as AI coding assistant for implementation, testing and documentation. Documentation-only change; diff check passed. Publication pending: two push attempts failed (connection reset / port 443 unavailable). Next publication step: git push origin main, then compare local HEAD with remote refs/heads/main.
+- README Contributors credits Krypton-117 for concept, requirements, direction and documentation; OpenAI Codex as AI coding assistant for implementation and testing. Documentation-only change; diff check passed. Publication pending: two push attempts failed (connection reset / port 443 unavailable). Next publication step: git push origin main, then compare local HEAD with remote refs/heads/main.
 - Installed personal agent-handoff from WeirdSky924/agent-handoff-skill; initialized and maintained repository continuity.
 - Conda base Python 3.12.9: <conda-base-python>.
 - Six-tool Method Bank: validated atomic writes, SQLite/FTS5 filters, many-to-many provenance, review history and reviewed universal seed.

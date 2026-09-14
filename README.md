@@ -39,8 +39,8 @@ PaperPipe、PaperQA 和 Context7 的配置与上游文档见 [`docs/TOOLING.md`]
 
 ## Contributors
 
-- **Krypton-117**：构想、需求与方向。
-- **OpenAI Codex（AI 编程助手）**：代码实现、测试与文档整理。
+- **Krypton-117**：构想、需求、方向与文档整理。
+- **OpenAI Codex（AI 编程助手）**：代码实现与测试。
 
 ## 许可证
 
