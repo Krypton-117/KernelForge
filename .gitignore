@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.runtime/
+data/
+docs/upstream/
+*.sqlite3
+*.sqlite3-*
+docs/acceptance/*.log
+docs/acceptance/*-equations.txt
+docs/acceptance/diagnose_*.py
+docs/acceptance/probe_trace.py

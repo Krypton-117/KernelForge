@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-12T20:28:06.959284+00:00",
+  "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:16) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "<conda-base-python>",
+  "sqlite": "3.45.3",
+  "packages": {
+    "paperpipe": "1.11.0",
+    "mcp": "1.30.0",
+    "paper-qa": "2026.8.12",
+    "arxiv": "4.0.1"
+  },
+  "agent_handoff": {
+    "upstream": "https://github.com/WeirdSky924/agent-handoff-skill",
+    "installed_path": "<codex-skill-path>",
+    "skill_sha256": "c43c143bbf782505c12a8617404f0cb7dc5c2ebe612a8c97ca1f1f95c3576b8d"
+  },
+  "paperpipe_skills": [
+    "papi",
+    "papi-ask",
+    "papi-compare",
+    "papi-curate",
+    "papi-ground",
+    "papi-init",
+    "papi-verify"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-12T20:24:32.852576+00:00",
+  "server": {
+    "name": "kernel-forge-method-bank",
+    "version": "0.1.0"
+  },
+  "protocol": "2025-11-25",
+  "tools": [
+    "method_search",
+    "method_get",
+    "method_add_candidate",
+    "method_review",
+    "method_sources",
+    "source_get"
+  ],
+  "seed_search": [
+    {
+      "id": "METHOD-MINIMUM-SUFFICIENT-CONTEXT",
+      "title": "Minimum Sufficient Context",
+      "aphorism": "Give each agent only the context required to perform its role reliably.",
+      "trigger": "Whenever work is delegated to an agent or subagent.",
+      "scope_level": "universal",
+      "scope_tags": [
+        "agent-orchestration"
+      ],
+      "status": "reviewed"
+    }
+  ]
+}

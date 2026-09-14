@@ -1,0 +1,37 @@
+{
+  "method": {
+    "id": "METHOD-MATCH-NORMALIZATION-STATISTICS-TO-EXECUTION",
+    "title": "Match normalization statistics to the execution unit",
+    "aphorism": "Normalize with statistics available when the model runs.",
+    "source_claim": "Layer Normalization section 3 computes mean and standard deviation over hidden units within each individual training case; different cases have different statistics, allowing online use with batch size one.",
+    "interpretation": "For an experiment constrained to individual examples or tiny batches, include per-example layer normalization as a candidate and check that unrelated examples cannot alter its normalization result.",
+    "generalized_principle": "Choose the population over which state or statistics are computed to match the independence and information available at execution time.",
+    "trigger": "A proposed model must operate on single examples or unreliable small batches.",
+    "scope_level": "domain",
+    "scope_tags": [
+      "machine-learning",
+      "normalization",
+      "execution-contract"
+    ],
+    "action_bias": "Compare no normalization, batch normalization and per-example layer normalization under fixed training budgets; perturb co-batched examples and inspect per-example outputs.",
+    "verification": "Confirm the intended hidden-unit reduction axis; test singleton and changed-co-batch inference at fixed weights, specify zero-variance epsilon separately, and compare held-out quality and runtime before adoption."
+  },
+  "sources": [
+    {
+      "source_id": "SOURCE-LAYER-NORMALIZATION-1607-06450",
+      "source_type": "paper",
+      "title": "Layer Normalization",
+      "external_id": "arxiv:1607.06450",
+      "uri": "https://arxiv.org/abs/1607.06450",
+      "metadata": {
+        "paperpipe_name": "layer-normalization",
+        "source_path": "data/papers/papers/layer-normalization/source.tex",
+        "source_sha256": "d578147641107765ce95ba50aedeaae6ea6623a4aa54ae4eabc35e9129fb09d4",
+        "pdf_sha256": "c464f839fb8d59f7fde92f9b4caa67c2d1f2f196b88f93fb60502249df0aaef7"
+      },
+      "locator": "Section 3, equation (3), source.tex lines 117-130; layer-normalization pages 2-3",
+      "relation": "supports",
+      "note": "Mean and standard deviation reduce across H hidden units for each case. Generalization and proposed engineering test are agent-derived, not paper conclusions."
+    }
+  ]
+}

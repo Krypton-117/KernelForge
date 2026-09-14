@@ -1,0 +1,68 @@
+[
+  {
+    "method": {
+      "id": "METHOD-SCALE-BEFORE-SOFTMAX",
+      "title": "Scale aggregates before saturating nonlinearities",
+      "aphorism": "Check scale before blaming the optimizer.",
+      "source_claim": "The authors suspect larger dot products can saturate softmax and reduce gradients; they divide attention logits by the square root of key dimension.",
+      "interpretation": "When attention gradients weaken as key dimension grows, inspect logit scale before changing optimization.",
+      "generalized_principle": "Measure how aggregate variance changes with dimension before choosing a normalization factor.",
+      "trigger": "Attention instability or softmax saturation when increasing key dimension.",
+      "scope_level": "domain",
+      "scope_tags": [
+        "machine-learning",
+        "numerical-stability"
+      ],
+      "action_bias": "Inspect logit variance and gradient magnitude, then test scaling against a fixed baseline.",
+      "verification": "Compare saturation and gradient statistics over multiple key dimensions; check that the source assumptions apply."
+    },
+    "sources": [
+      {
+        "source_id": "SOURCE-ATTENTION-1706-03762",
+        "source_type": "paper",
+        "title": "Attention Is All You Need",
+        "external_id": "arxiv:1706.03762",
+        "uri": "https://arxiv.org/abs/1706.03762",
+        "metadata": {
+          "paperpipe_name": "attention",
+          "source_path": "data/papers/papers/attention/source.tex",
+          "source_sha256": "b63d664336ab4a6c51c691561979d8990e92081f11f620009c973785fc137733",
+          "pdf_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697"
+        },
+        "locator": "section 3.2.1, equation (1), source.tex line 553",
+        "relation": "supports",
+        "note": "Source statement is a proposed explanation under stated independence and variance assumptions."
+      }
+    ]
+  },
+  {
+    "method": {
+      "id": "METHOD-VERIFY-HANDOFF",
+      "title": "Verify a checkpoint before resuming",
+      "aphorism": "A handoff points to evidence.",
+      "source_claim": "The specification requires agents to verify relevant WORKSTATE claims against repository state before continuing.",
+      "interpretation": "Recover through the short entry files, then run a bounded validation at the stated breakpoint.",
+      "generalized_principle": "Treat written operational state as orientation and validate it before acting.",
+      "trigger": "Resuming Kernel-Forge in a new session.",
+      "scope_level": "project",
+      "scope_tags": [
+        "continuity"
+      ],
+      "action_bias": "Read WORKSTATE and test the next relevant claim before changing code.",
+      "verification": "A fresh agent identifies the objective, unfinished work and executable next step without conversation history."
+    },
+    "sources": [
+      {
+        "source_id": "SOURCE-KERNEL-FORGE-SPEC",
+        "source_type": "repository",
+        "title": "Kernel-Forge Specification v0.1",
+        "external_id": "v0.1",
+        "uri": "KERNEL_FORGE_SPEC.md",
+        "metadata": {},
+        "locator": "sections 15, 21 and 22",
+        "relation": "supports",
+        "note": "Initial experiment: docs/acceptance/continuity-initial.md."
+      }
+    ]
+  }
+]

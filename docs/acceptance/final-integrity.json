@@ -1,0 +1,11 @@
+{
+  "integrity_check": "ok",
+  "foreign_key_check": "passed",
+  "paper_source_hashes": "passed",
+  "counts": {
+    "methods": 4,
+    "sources": 3,
+    "method_sources": 4,
+    "reviews": 2
+  }
+}

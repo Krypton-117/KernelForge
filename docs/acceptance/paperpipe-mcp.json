@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-12T20:24:03.458884+00:00",
+  "server": {
+    "name": "paperqa",
+    "version": "1.30.0"
+  },
+  "protocol": "2025-11-25",
+  "tools": [
+    "retrieve_chunks",
+    "list_pqa_indexes",
+    "get_pqa_index_status"
+  ],
+  "indexes": {
+    "result": [
+      {
+        "name": "paperpipe_sparse",
+        "embedding_model": "sparse",
+        "has_metadata": true
+      }
+    ]
+  },
+  "retrieval": {
+    "ok": true,
+    "query": "dot products softmax gradients",
+    "index": {
+      "directory": "<repository-root>\\data\\papers\\.pqa_index",
+      "name": "paperpipe_sparse",
+      "embedding_model": "sparse"
+    },
+    "candidate_papers": 2,
+    "index_files": {
+      "total": 2,
+      "failed": 0
+    },
+    "chunks": [
+      {
+        "chunk_name": "attention pages 5-7",
+        "docname": "attention",
+        "citation": "Ashish Vaswani et al. (2017). Attention Is All You Need.",
+        "text_sha256": "d93b87bf43a2ed8a183b03bd0af900f5f604b85503039295a89425d687960a9c",
+        "preview": "model. We also use the usual learned linear transfor-\nmation and softmax function to convert the decoder output to predicted next-token probabilities. In\nour mo"
+      },
+      {
+        "chunk_name": "layer-normalization pages 4-6",
+        "docname": "layer-normalization",
+        "citation": "Jimmy Lei Ba et al. (2016). Layer Normalization.",
+        "text_sha256": "79e788f5992a42eb1123c210f72399b86deb02111f5a6982fab765abb3c09639",
+        "preview": "ng\nbehavior through the geometry and the manifold of the parameter space. We show that the normal-\nization scalarσ can implicitly reduce learning rate and makes"
+      },
+      {
+        "chunk_name": "attention pages 4-5",
+        "docname": "attention",
+        "citation": "Ashish Vaswani et al. (2017). Attention Is All You Need.",
+        "text_sha256": "53cdaef7e8b84bf6f2ebbff24b8350b6c3f683a303e1a773ae4763a37801a02e",
+        "preview": " divide each by√dk, and apply a softmax function to obtain the weights on the\nvalues.\nIn practice, we compute the attention function on a set of queries simulta"
+      }
+    ]
+  },
+  "contains_gradient_passage": true
+}

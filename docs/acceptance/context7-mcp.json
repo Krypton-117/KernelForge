@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-12T20:24:12.214275+00:00",
+  "server": {
+    "name": "Context7",
+    "version": "4.1.0",
+    "websiteUrl": "https://context7.com",
+    "icons": [
+      {
+        "src": "https://context7.com/context7-icon-green.png",
+        "mimeType": "image/png"
+      }
+    ],
+    "description": "Context7 provides up-to-date documentation and code examples for libraries and frameworks."
+  },
+  "protocol": "2025-11-25",
+  "tools": [
+    "resolve-library-id",
+    "query-docs"
+  ],
+  "library_id": "/python/cpython/v3.11.14",
+  "versioned_sources": [
+    "https://github.com/python/cpython/blob/v3.11.14/Doc/library/sqlite3.rst",
+    "https://github.com/python/cpython/blob/v3.11.14/Doc/whatsnew/2.5.rst"
+  ],
+  "other_sources": [
+    "https://github.com/python/cpython/blob/main/Lib/test/test_sqlite3/test_dbapi.py",
+    "https://github.com/python/cpython/blob/main/Modules/_sqlite/cursor.c"
+  ],
+  "response_sha256": "a874bd6fabe8ba0fa4fba41fc94b388bebf2856b69f5632765986fd64cd8cda3"
+}

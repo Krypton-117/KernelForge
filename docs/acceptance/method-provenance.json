@@ -1,0 +1,29 @@
+{
+  "acceptance_A": "passed",
+  "acceptance_B": "passed",
+  "method_id": "METHOD-SCALE-BEFORE-SOFTMAX",
+  "source_id": "SOURCE-ATTENTION-1706-03762",
+  "locator": "section 3.2.1, equation (1), source.tex line 553",
+  "source_sha256": "b63d664336ab4a6c51c691561979d8990e92081f11f620009c973785fc137733",
+  "scopes": [
+    "domain",
+    "project",
+    "universal"
+  ],
+  "compact_search": [
+    {
+      "id": "METHOD-SCALE-BEFORE-SOFTMAX",
+      "title": "Scale aggregates before saturating nonlinearities",
+      "aphorism": "Check scale before blaming the optimizer.",
+      "trigger": "Attention instability or softmax saturation when increasing key dimension.",
+      "scope_level": "domain",
+      "scope_tags": [
+        "machine-learning",
+        "numerical-stability"
+      ],
+      "status": "candidate"
+    }
+  ],
+  "restart_verified": true,
+  "engineering_decision": "For a key-dimension-dependent attention instability, measure logits and gradients before changing the optimizer; candidate requires workload verification."
+}

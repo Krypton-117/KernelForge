@@ -1,0 +1,4 @@
+paperpipe[mcp]==1.11.0
+mcp==1.30.0
+paper-qa==2026.8.12
+arxiv==4.0.1

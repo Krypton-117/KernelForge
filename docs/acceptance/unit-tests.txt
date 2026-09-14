@@ -1,0 +1,14 @@
+test_atomic_rollback_on_late_source_conflict (test_method_bank.BankTests.test_atomic_rollback_on_late_source_conflict) ... ok
+test_invalid_inputs_do_not_write (test_method_bank.BankTests.test_invalid_inputs_do_not_write) ... ok
+test_literal_query_punctuation_and_injection (test_method_bank.BankTests.test_literal_query_punctuation_and_injection) ... ok
+test_missing_records (test_method_bank.BankTests.test_missing_records) ... ok
+test_provenance_roundtrip_many_to_many (test_method_bank.BankTests.test_provenance_roundtrip_many_to_many) ... ok
+test_review_records_and_filters (test_method_bank.BankTests.test_review_records_and_filters) ... ok
+test_seed_and_restart (test_method_bank.BankTests.test_seed_and_restart) ... ok
+test_three_scopes_compact_filtered_retrieval (test_method_bank.BankTests.test_three_scopes_compact_filtered_retrieval) ... ok
+test_mcp_wire_lifecycle_and_persistence (test_method_bank.StdioTests.test_mcp_wire_lifecycle_and_persistence) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.288s
+
+OK

@@ -1,0 +1,26 @@
+[mcp_servers.method-bank]
+command = '<conda-base-python>'
+args = ['-X', 'utf8', '<repository-root>\method-bank\src\kernel_forge_method_bank\server.py']
+cwd = '<repository-root>'
+startup_timeout_sec = 30
+
+[mcp_servers.context7]
+url = 'https://mcp.context7.com/mcp'
+startup_timeout_sec = 30
+tool_timeout_sec = 60
+
+[mcp_servers.paperqa]
+command = '<conda-base-python>'
+args = ['-X', 'utf8', '<repository-root>\scripts\paperqa_server.py']
+cwd = '<repository-root>'
+startup_timeout_sec = 60
+tool_timeout_sec = 120
+
+[mcp_servers.paperqa.env]
+PYTHONUTF8 = '1'
+PAPER_DB_PATH = '<repository-root>\data\papers'
+PAPERQA_EMBEDDING = 'sparse'
+
+LITELLM_LOCAL_MODEL_COST_MAP = 'True'
+
+MKL_SERIAL = 'YES'
